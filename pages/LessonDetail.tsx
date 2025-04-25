@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import lessons from '../data/lessons';
+import lessons from '../data/lessons.tsx';
 
 const getProgress = () => {
   const prog = localStorage.getItem('progress');

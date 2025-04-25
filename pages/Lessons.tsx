@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import lessons from '../data/lessons';
+import lessons from '../data/lessons.tsx';
 
 const getProgress = () => {
   const prog = localStorage.getItem('progress');

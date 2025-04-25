@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import lessons from '../data/lessons';
+import lessons from '../data/lessons.tsx';
 
 const skills = [
   { name: 'Computer Basics', desc: 'Understanding how computers work and basic operations.' },

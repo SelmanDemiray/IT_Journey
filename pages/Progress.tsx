@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import lessons from '../data/lessons';
+import lessons from '../data/lessons.tsx';
 import ProgressBar from '../components/ProgressBar';
 
 const getProgress = () => {
