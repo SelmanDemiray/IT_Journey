@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-800 dark:text-gray-100 transition-colors;
+  }
+  
+  /* Custom font class for unique display typography */
+  .font-display {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Shadow text for better readability on image backgrounds */
+  .shadow-text {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Animated elements for interactive lessons */
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  /* Hover effects for interactive cards */
+  .card-hover {
+    @apply transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md;
+  }
+
+  /* Fun highlighting for key concepts */
+  .highlight-concept {
+    @apply bg-gradient-to-r from-yellow-200 to-yellow-100 dark:from-yellow-900 dark:to-yellow-800 px-1.5 py-0.5 rounded;
+  }
+  
+  /* Fun badges for special elements */
+  .fun-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200;
+  }
+}
+
+@layer components {
+  /* Styling for prose content in lessons */
+  .prose h3 {
+    @apply text-blue-700 dark:text-blue-300;
+  }
+  
+  .prose a {
+    @apply text-blue-600 dark:text-blue-400 hover:underline;
+  }
+  
+  .prose ul {
+    @apply mb-6;
+  }
+  
+  .prose ul.list-circle {
+    list-style-type: circle;
+  }
+  
+  .prose ul.list-square {
+    list-style-type: square;
+  }
+  
+  /* Interactive elements for lessons */
+  .quiz-card {
+    @apply bg-blue-50 dark:bg-blue-900/30 rounded-lg border border-blue-200 dark:border-blue-700 p-4 my-4;
+  }
+  
+  .fun-fact-card {
+    @apply bg-purple-50 dark:bg-purple-900/30 rounded-lg border border-purple-200 dark:border-purple-700 p-4 my-4;
+  }
+  
+  .challenge-card {
+    @apply bg-green-50 dark:bg-green-900/30 rounded-lg border border-green-200 dark:border-green-700 p-4 my-4;
+  }
+  
+  .analogy-card {
+    @apply bg-amber-50 dark:bg-amber-900/30 rounded-lg border border-amber-200 dark:border-amber-700 p-4 my-4;
+  }
+  
+  .draggable-item {
+    @apply px-3 py-1.5 bg-gray-100 dark:bg-gray-700 rounded-md shadow cursor-move border border-gray-200 dark:border-gray-600 select-none;
+  }
+  
+  .drop-target {
+    @apply min-h-[100px] p-3 rounded-md border-2 border-dashed;
+  }
+
+  /* Smooth opacity transitions for dictionary and modals */
+  .opacity-transition {
+    @apply transition-opacity duration-300;
+  }
+}
